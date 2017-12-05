@@ -43,15 +43,7 @@ public class LoginServlet extends HttpServlet {
         ResultSet rs = pst.executeQuery();
         
         if (rs.next()){
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Login</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Welcome " + username + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            response.sendRedirect("http://10.114.34.143:8080/Database_connection/upload.html");
         } else {
             out.println("<!DOCTYPE html>");
             out.println("<html>");

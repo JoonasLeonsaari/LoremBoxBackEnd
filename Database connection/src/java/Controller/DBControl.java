@@ -1,6 +1,7 @@
 
 package Controller;
  
+import Model.Files;
 import Model.Users;
 import java.util.List;
 import javax.ejb.Stateless;
@@ -35,6 +36,11 @@ public class DBControl {
     public Users insert (Users u){
         em.persist(u);
         return u;
+    }
+   
+    public Files insertFiles (Files f){
+        em.persist(f);
+        return f;
     }
 }
     

@@ -11,12 +11,15 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        
         <form method="post" action="db/service/setpass">
+            <h1>New User</h1>
             <input type="text" name="username" placeholder="Enter Username">
             <input type="text" name="password" placeholder="Enter Password">
             <input type="submit" value="text">
         </form>
         <!--Log in for exsisting user under  -->
+        <h1>Exsisting User</h1>
         <form method="post" action="LoginServlet">
             <input type="text" name="t1" placeholder="Enter Username">
             <input type="text" name="t2" placeholder="Enter Password">

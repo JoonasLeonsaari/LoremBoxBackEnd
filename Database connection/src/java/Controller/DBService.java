@@ -51,7 +51,10 @@ public class DBService {
         return dbc.insert(u);
         
     }
-       
+    
+    public void userdir(){
+        
+    }   
     /**
      * PUT method for updating or creating an instance of DBService
      * @param content representation for the resource
